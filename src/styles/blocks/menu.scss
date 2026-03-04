@@ -1,8 +1,14 @@
 .menu {
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
 
   box-sizing: border-box;
   min-height: 100vh;
+  max-height: 100vh;
+
+  @supports (height: 100dvh) {
+    max-height: 100dvh;
+  }
 
   font-weight: 600;
   text-transform: uppercase;

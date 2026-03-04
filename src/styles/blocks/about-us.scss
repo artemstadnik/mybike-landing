@@ -34,4 +34,18 @@
       grid-column: span 6;
     }
   }
+
+  &__demo-link {
+    grid-column: span 2;
+    margin-top: 24px;
+    width: fit-content;
+
+    @include on-tablet {
+      grid-column: span 3;
+    }
+
+    @include on-desktop {
+      grid-column: span 6;
+    }
+  }
 }
